@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Media</title>
+ <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+ <style>
+  .media-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   padding: 1rem;
+  }
+  .media-container img {
+   max-width: 300px; /* Adjust as needed */
+   height: auto;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+ </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+ <header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+   <h1 class="text-2xl font-bold">Media</h1>
+   <nav class="space-x-4">
+    <a href="/" class="text-blue-600 hover:underline py-2 px-4 rounded">Home</a>
+     <a href="/cv" class="text-blue-600 hover:underline py-2 px-4 rounded">CV</a>
+     <a href="/publications" class="text-blue-600 hover:underline py-2 px-4 rounded">Publications</a>
+     <a href="/achievements" class="text-blue-600 hover:underline py-2 px-4 rounded">Achievements</a>
+     <a href="/certificates" class="text-blue-600 hover:underline py-2 px-4 rounded">Certificates</a>
+     <a href="/media" class="text-blue-600 hover:underline py-2 px-4 rounded">Media</a>
+     <a href="/contact" class="text-blue-600 hover:underline py-2 px-4 rounded">Contact</a>
+   </nav>
+  </div>
+ </header>
+ <main class="max-w-4xl mx-auto py-12 px-4">
+  <section>
+   <div class="media-container">
+    <img src="/image/Estifanos_picture.jpeg" alt="Profile Picture">
+    </div>
+  </section>
+ </main>
+</body>
+</html>
