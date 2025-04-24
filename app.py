@@ -24,7 +24,7 @@ def certificates():
     return render_template('certificates.html')
 
 @app.route('/media')
-def certificates():
+def media():
     return render_template('media.html')
     
 @app.route('/contact', methods=['GET', 'POST'])
