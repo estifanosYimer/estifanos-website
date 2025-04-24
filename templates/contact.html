@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Estifanos Addisu Yimer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/cv">CV</a>
-            <a href="/publications">Publications</a>
-            <a href="/achievements">Achievements</a>
-            <a href="/certificates">Certificates</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Contact</h2>
-            <form action="https://formspree.io/f/xanoykkz" method="POST">
-                <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject"><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
-</body>
-</html>
+ <html lang="en">
+ 
+
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Estifanos Addisu Yimer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+ </head>
+ 
+
+ <body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow">
+   <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Estifanos Addisu Yimer</h1>
+    <nav class="space-x-4">
+     <a href="/" class="text-blue-600 hover:underline py-2 px-4 rounded">Home</a>
+     <a href="/cv" class="text-blue-600 hover:underline py-2 px-4 rounded">CV</a>
+     <a href="/publications" class="text-blue-600 hover:underline py-2 px-4 rounded">Publications</a>
+     <a href="/achievements" class="text-blue-600 hover:underline py-2 px-4 rounded">Achievements</a>
+     <a href="/certificates" class="text-blue-600 hover:underline py-2 px-4 rounded">Certificates</a>
+     <a href="/contact" class="text-blue-600 hover:underline py-2 px-4 rounded">Contact</a>
+    </nav>
+   </div>
+  </header>
+  <main class="max-w-4xl mx-auto py-12 px-4">
+   <section>
+    <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+    <form action="https://formspree.io/f/xanoykkz" method="POST" class="space-y-4">
+     <div>
+      <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+      <input type="email" id="email" name="email" required
+       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+     </div>
+     <div>
+      <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject:</label>
+      <input type="text" id="subject" name="subject"
+       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+     </div>
+     <div>
+      <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+      <textarea id="message" name="message" rows="4"
+       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+       required></textarea>
+     </div>
+     <div>
+      <input type="submit" value="Submit"
+       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer">
+     </div>
+    </form>
+   </section>
+  </main>
+ </body>
+ 
+
+ </html>
