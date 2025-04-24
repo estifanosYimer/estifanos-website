@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Estifanos Addisu Yimer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Estifanos Addisu Yimer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/cv">CV</a>
-        <a href="/publications">Publications</a>
-        <a href="/contact">Contact</a>
-    </nav>
-    <main>
-        <h1>Curriculum Vitae</h1>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="w-full px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Estifanos Addisu Yimer</h1>
+      <nav class="space-x-4">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <a href="/cv" class="text-blue-600 hover:underline">CV</a>
+        <a href="/publications" class="text-blue-600 hover:underline">Publications</a>
+        <a href="/contact" class="text-blue-600 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="w-full px-6 py-10">
+    <h2 class="text-3xl font-semibold mb-6">Curriculum Vitae</h2>
 
-        <section>
-            <h2>Summary</h2>
-            <p>Experienced in academia and engineering with expertise in hydrological modeling, drought assessment, and Nature-based Solutions. Skilled in Python, R, QGIS, SWAT+, MODFLOW.</p>
-        </section>
+    <section class="mb-8">
+      <h3 class="text-xl font-bold">Summary</h3>
+      <p>Experienced in academia and engineering with expertise in hydrological modeling, drought assessment, and Nature-based Solutions.</p>
+    </section>
 
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Lecturer</strong>, Akaki Polytechnic College (2016–2018)</li>
-                <li><strong>Site Engineer</strong>, China State Construction (2016–2018)</li>
-                <li><strong>Intern</strong>, Royal Meteorological Institute Belgium (2021)</li>
-                <li><strong>Research Stay</strong>, Colorado State University (2024)</li>
-            </ul>
-        </section>
+    <section class="mb-8">
+      <h3 class="text-xl font-bold">Experience</h3>
+      <ul class="list-disc list-inside">
+        <li><strong>Lecturer</strong>, Akaki Polytechnic College (2016–2018)</li>
+        <li><strong>Site Engineer</strong>, China State Construction (2016–2018)</li>
+        <li><strong>Intern</strong>, Royal Meteorological Institute Belgium (2021)</li>
+        <li><strong>Research Stay</strong>, Colorado State University (2024)</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Skills</h2>
-            <p>Project management, teaching, proposal writing, Python, R, QGIS, SWAT+, MODFLOW.</p>
-        </section>
+    <section class="mb-8">
+      <h3 class="text-xl font-bold">Skills</h3>
+      <p>Project management, teaching, proposal writing, Python, R, QGIS, SWAT+, MODFLOW.</p>
+    </section>
 
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>PhD in Water Resources Engineering, VUB (2025 expected)</li>
-                <li>MSc in Water Sustainability, University of Antwerp (2021)</li>
-                <li>MSc in Water Resources Engineering, VUB & KU Leuven (2020)</li>
-                <li>BSc in Civil Engineering, Addis Ababa University (2016)</li>
-            </ul>
-        </section>
+    <section class="mb-8">
+      <h3 class="text-xl font-bold">Education</h3>
+      <ul class="list-disc list-inside">
+        <li>PhD in Water Resources Engineering, VUB (2025 expected)</li>
+        <li>MSc in Water Sustainability, University of Antwerp (2021)</li>
+        <li>MSc in Water Resources Engineering, VUB & KU Leuven (2020)</li>
+        <li>BSc in Civil Engineering, Addis Ababa University (2016)</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Languages</h2>
-            <p>Amharic (Native), English (C2), Dutch (A2)</p>
-        </section>
-    </main>
+    <section>
+      <h3 class="text-xl font-bold">Languages</h3>
+      <p>Amharic (Native), English (C2), Dutch (A2)</p>
+    </section>
+  </main>
 </body>
 </html>

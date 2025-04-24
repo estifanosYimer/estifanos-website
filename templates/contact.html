@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact - Estifanos Addisu Yimer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Estifanos Addisu Yimer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/cv">CV</a>
-        <a href="/publications">Publications</a>
-        <a href="/contact">Contact</a>
-    </nav>
-    <main>
-        <h1>Contact</h1>
-        <p>Email: <a href="mailto:estifanos.addisu.yimer@vub.be">estifanos.addisu.yimer@vub.be</a></p>
-        <p>Alternate: <a href="mailto:estifanosaddisu17@gmail.com">estifanosaddisu17@gmail.com</a></p>
-        <p>Location: Leuven, Belgium</p>
-        <p>Phone: +32 488 98 77 66</p>
-    </main>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="w-full px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Estifanos Addisu Yimer</h1>
+      <nav class="space-x-4">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <a href="/cv" class="text-blue-600 hover:underline">CV</a>
+        <a href="/publications" class="text-blue-600 hover:underline">Publications</a>
+        <a href="/contact" class="text-blue-600 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="w-full px-6 py-10">
+    <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+    <ul class="space-y-2">
+      <li><strong>Email:</strong> <a class="text-blue-600 underline" href="mailto:estifanos.addisu.yimer@vub.be">estifanos.addisu.yimer@vub.be</a></li>
+      <li><strong>Alternate:</strong> <a class="text-blue-600 underline" href="mailto:estifanosaddisu17@gmail.com">estifanosaddisu17@gmail.com</a></li>
+      <li><strong>Location:</strong> Leuven, Belgium</li>
+      <li><strong>Phone:</strong> +32 488 98 77 66</li>
+    </ul>
+  </main>
 </body>
 </html>
