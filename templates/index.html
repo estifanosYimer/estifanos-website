@@ -8,20 +8,43 @@
   <title>Estifanos Addisu Yimer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-   .profile-image {
+   .image-container {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     float: right;
     margin-left: 1rem;
-    /* Added max-width to prevent overflow */
-    max-width: 40%;
-    height: auto;
+    background-image: url('/image/Estifanos-picture.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
    }
  
 
    .main-content {
     overflow: hidden;
+   }
+ 
+
+   /* Media query for desktop */
+   @media (min-width: 768px) {
+    .image-container {
+     width: 200px;
+     height: 200px;
+    }
+   }
+ 
+
+   /* Media query for phone (smaller screens) */
+   @media (max-width: 767px) {
+    .image-container {
+     width: 120px;
+     height: 120px;
+     float: none;
+     margin: 0 auto 1rem;
+     display: block;
+    }
    }
   </style>
  </head>
@@ -46,7 +69,9 @@
   <main class="max-w-4xl mx-auto py-12 px-4">
    <section class="main-content">
     <h2 class="text-3xl font-semibold mb-4">Welcome</h2>
-    <img src="/image/Estifanos-picture.jpeg" alt="Estifanos Addisu Yimer" class="profile-image">
+    <div class="image-container">
+     <img src="/image/Estifanos-picture.jpeg" alt="Estifanos Addisu Yimer" style="display: none;">
+    </div>
     <p class="mb-4">Water Resources Engineer | Researcher | Nature-Based Solutions Advocate</p>
     <p class="mb-6 text-gray-700">
      Welcome to my personal academic portfolio. Here you can find details
