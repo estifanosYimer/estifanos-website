@@ -9,17 +9,16 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
    .profile-image {
-    width: 200px;
+    width: 150px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-left: 1rem;
    }
  
 
-   .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+   .main-content {
+    overflow: hidden;
    }
   </style>
  </head>
@@ -42,8 +41,30 @@
  
 
   <main class="max-w-4xl mx-auto py-12 px-4">
-   <div class="image-container">
+   <section class="main-content">
+    <h2 class="text-3xl font-semibold mb-4">Welcome</h2>
     <img src="/image/Estifanos-picture.jpeg" alt="Estifanos Addisu Yimer" class="profile-image">
+    <p class="mb-4">Water Resources Engineer | Researcher | Nature-Based Solutions Advocate</p>
+    <p class="mb-6 text-gray-700">
+     Welcome to my personal academic portfolio. Here you can find details
+     about my professional background, academic work, and publications.
+    </p>
+   </section>
+   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="p-6 bg-white rounded-lg shadow">
+     <h3 class="text-xl font-medium mb-2">Professional Background</h3>
+     <p class="text-gray-700">
+      Lecturer, Researcher, and Engineer with extensive experience in
+      geohydrological modeling and nature-based solutions.
+     </p>
+    </div>
+    <div class="p-6 bg-white rounded-lg shadow">
+     <h3 class="text-xl font-medium mb-2">Research Focus</h3>
+     <p class="text-gray-700">
+      Hydrological modeling, drought analysis, and sustainable water
+      resources management using coupled models.
+     </p>
+    </div>
    </div>
   </main>
  </body>
