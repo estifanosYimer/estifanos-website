@@ -23,6 +23,10 @@ def achievements():
 def certificates():
     return render_template('certificates.html')
 
+@app.route('/media')
+def certificates():
+    return render_template('media.html')
+    
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
