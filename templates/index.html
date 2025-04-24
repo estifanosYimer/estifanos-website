@@ -1,137 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
+ 
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estifanos Addisu Yimer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .version-select {
-            text-align: center;
-            padding: 0.5rem;
-            background-color: #f0f0f0;
-        }
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estifanos Addisu Yimer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+   .image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-left: 1rem;
+    background-image: url('/image/Estifanos-picture.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+ 
 
-        .desktop-only {
-            display: block;
-        }
+   .main-content {
+    overflow: hidden;
+   }
+ 
 
-        .mobile-only {
-            display: none;
-        }
+   /* Media query for desktop */
+   @media (min-width: 768px) {
+    .image-container {
+     width: 200px;
+     height: 200px;
+    }
+   }
+ 
 
-        @media (max-width: 767px) {
-            .desktop-only {
-                display: none;
-            }
+   /* Media query for phone (smaller screens) */
+   @media (max-width: 767px) {
+    .image-container {
+     width: 120px;
+     height: 120px;
+     float: none;
+     margin: 0 auto 1rem;
+     display: block;
+    }
+   }
+  </style>
+ </head>
+ 
 
-            .mobile-only {
-                display: block;
-            }
-        }
+ <body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow">
+   <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Estifanos Addisu Yimer</h1>
+    <nav class="space-x-4">
+     <a href="/" class="text-blue-600 hover:underline py-2 px-4 rounded">Home</a>
+     <a href="/cv" class="text-blue-600 hover:underline py-2 px-4 rounded">CV</a>
+     <a href="/publications" class="text-blue-600 hover:underline py-2 px-4 rounded">Publications</a>
+     <a href="/achievements" class="text-blue-600 hover:underline py-2 px-4 rounded">Achievements</a>
+     <a href="/certificates" class="text-blue-600 hover:underline py-2 px-4 rounded">Certificates</a>
+     <a href="/contact" class="text-blue-600 hover:underline py-2 px-4 rounded">Contact</a>
+    </nav>
+   </div>
+  </header>
+ 
 
-        .image-container {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            float: right;
-            margin-left: 1rem;
-            background-image: url('/image/Estifanos-picture.jpeg');
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .main-content {
-            overflow: hidden;
-        }
-
-        /* Media query for desktop */
-        @media (min-width: 768px) {
-            .image-container {
-                width: 200px;
-                height: 200px;
-            }
-        }
-
-        /* Media query for phone (smaller screens) */
-        @media (max-width: 767px) {
-            .image-container {
-                width: 120px;
-                height: 120px;
-                float: none;
-                margin: 0 auto 1rem;
-                display: block;
-            }
-        }
-    </style>
-</head>
-
-<body class="bg-gray-50 text-gray-900">
-    <div class="version-select">
-        <a href="#" onclick="showDesktop()" class="text-blue-600 hover:underline py-1 px-2 rounded">Desktop Version</a> |
-        <a href="#" onclick="showMobile()" class="text-blue-600 hover:underline py-1 px-2 rounded">Mobile Version</a>
+  <main class="max-w-4xl mx-auto py-12 px-4">
+   <section class="main-content">
+    <h2 class="text-3xl font-semibold mb-4">Welcome</h2>
+    <div class="image-container">
+     <img src="/image/Estifanos-picture.jpeg" alt="Estifanos Addisu Yimer" style="display: none;">
     </div>
-    <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Estifanos Addisu Yimer</h1>
-            <nav class="space-x-4">
-                <a href="/" class="text-blue-600 hover:underline py-2 px-4 rounded">Home</a>
-                <a href="/cv" class="text-blue-600 hover:underline py-2 px-4 rounded">CV</a>
-                <a href="/publications" class="text-blue-600 hover:underline py-2 px-4 rounded">Publications</a>
-                <a href="/achievements" class="text-blue-600 hover:underline py-2 px-4 rounded">Achievements</a>
-                <a href="/certificates" class="text-blue-600 hover:underline py-2 px-4 rounded">Certificates</a>
-                <a href="/contact" class="text-blue-600 hover:underline py-2 px-4 rounded">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <p class="mb-4">Water Resources Engineer | Researcher | Nature-Based Solutions Advocate</p>
+    <p class="mb-6 text-gray-700">
+     Welcome to my personal academic portfolio. Here you can find details
+     about my professional background, academic work, and publications.
+    </p>
+   </section>
+   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="p-6 bg-white rounded-lg shadow">
+     <h3 class="text-xl font-medium mb-2">Professional Background</h3>
+     <p class="text-gray-700">
+      Lecturer, Researcher, and Engineer with extensive experience in
+      geohydrological modeling and nature-based solutions.
+     </p>
+    </div>
+    <div class="p-6 bg-white rounded-lg shadow">
+     <h3 class="text-xl font-medium mb-2">Research Focus</h3>
+     <p class="text-gray-700">
+      Hydrological modeling, drought analysis, and sustainable water
+      resources management using coupled models.
+     </p>
+    </div>
+   </div>
+  </main>
+ </body>
+ 
 
-    <main class="max-w-4xl mx-auto py-12 px-4">
-        <section class="main-content">
-            <h2 class="text-3xl font-semibold mb-4">Welcome</h2>
-            <div class="image-container desktop-only">
-                <img src="/image/Estifanos-picture.jpeg" alt="Estifanos Addisu Yimer" style="display: none;">
-            </div>
-            <p class="mb-4 desktop-only">Water Resources Engineer | Researcher | Nature-Based Solutions Advocate</p>
-            <p class="mb-6 text-gray-700 desktop-only">
-                Welcome to my personal academic portfolio. Here you can find details
-                about my professional background, academic work, and publications.
-            </p>
-            <p class="mobile-only">This is the mobile version. For full experience, switch to desktop version</p>
-        </section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 desktop-only">
-            <div class="p-6 bg-white rounded-lg shadow">
-                <h3 class="text-xl font-medium mb-2">Professional Background</h3>
-                <p class="text-gray-700">
-                    Lecturer, Researcher, and Engineer with extensive experience in
-                    geohydrological modeling and nature-based solutions.
-                </p>
-            </div>
-            <div class="p-6 bg-white rounded-lg shadow">
-                <h3 class="text-xl font-medium mb-2">Research Focus</h3>
-                <p class="text-gray-700">
-                    Hydrological modeling, drought analysis, and sustainable water
-                    resources management using coupled models.
-                </p>
-            </div>
-        </div>
-    </main>
-
-    <script>
-        function showDesktop() {
-            document.querySelectorAll('.desktop-only').forEach(el => el.style.display = 'block');
-            document.querySelectorAll('.mobile-only').forEach(el => el.style.display = 'none');
-        }
-
-        function showMobile() {
-            document.querySelectorAll('.desktop-only').forEach(el => el.style.display = 'none');
-            document.querySelectorAll('.mobile-only').forEach(el => el.style.display = 'block');
-        }
-         // Show desktop version by default (you might want to detect screen width here)
-        showDesktop();
-    </script>
-</body>
-
-</html>
+ </html>
