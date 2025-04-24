@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: estifanos-site
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
