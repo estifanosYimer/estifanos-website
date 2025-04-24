@@ -15,10 +15,6 @@ def cv():
 def publications():
     return render_template('publications.html')
 
-@app.route('/projects')
-def projects():
-    return render_template('projects.html')
-
 @app.route('/achievements')
 def achievements():
     return render_template('achievements.html')
