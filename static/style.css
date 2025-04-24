@@ -40,6 +40,8 @@ body {
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #eee; /* Subtle side borders */
+  border-right: 1px solid #eee;
  }
  
 
@@ -170,3 +172,5 @@ body {
  input[type="submit"]:hover {
   background-color: #00568c;
  }
+
+
